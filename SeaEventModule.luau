@@ -8,7 +8,8 @@ local function CheckSeaBeast()
          return 
       end
        if v.Name == "Sea Beast" and v:FindFirstChild("HumanoidRootPart") then
-          CheckSeaBeast()
+          CheckSeaBeast();
+          getgenv().CheckSea = true;
       end
-  end
+   end
 end
