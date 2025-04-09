@@ -1,3 +1,4 @@
+local ModuleSeaCheck = {};
 local getgenv = getgenv
 local success, getgenv = pcall(function()
   return getgenv()
@@ -24,3 +25,4 @@ local function CheckLeviathan()
         end;
       end;
    end;
+return ModuleSeaCheck, CheckSeaBeast(), CheckLeviathan()
